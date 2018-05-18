@@ -215,3 +215,53 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/*Media Queries*/
+
+/*Phones*/
+@media only screen and (max-width: 640px){
+  header{
+    position: static;
+  }
+  #logo{
+    width: 100%;
+  }
+  #masthead div{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  nav{
+    text-align: center;
+  }
+
+  nav a:first-child{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .work{
+    width: 100%;
+  }
+
+  #main-container{
+    width: 95%;
+    padding-top: 170px;
+  }
+}
+
+/*Tablets*/
+@media only screen and (max-width: 768px){
+  nav{
+    padding-right: 10px;
+  }
+  .container{
+    width: 90%;
+  }
+}
+
+/*Desktops*/
+@media only screen and (max-width: 980px){
+  nav{
+    padding-right: 10px;
+  }
+}
